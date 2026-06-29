@@ -49,6 +49,8 @@ Anything set in the admin panel overrides the matching environment variable.
 
 ## PostgreSQL
 
+Production on Vercel uses a Neon PostgreSQL database connected through the Vercel Marketplace.
+
 On a normal Node server, the app can use a local JSON file store when
 `DATABASE_URL` is unset or unreachable. Serverless hosts such as Vercel must use
 PostgreSQL because their filesystem is temporary and is not shared between
