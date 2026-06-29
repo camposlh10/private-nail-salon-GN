@@ -2864,6 +2864,58 @@ h3 {
   width: 2.1rem;
 }
 
+.clients-directory-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 72rem;
+}
+
+.client-directory-metrics {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.client-directory-metrics article {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(123, 36, 55, 0.06);
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.9rem;
+}
+
+.client-directory-metrics svg {
+  color: var(--rose-strong);
+}
+
+.client-directory-metrics span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.client-directory-metrics strong {
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.client-directory-card .client-account-list {
+  max-height: none;
+}
+
+@media (min-width: 800px) {
+  .client-directory-metrics {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .client-directory-metrics article {
+    padding: 1.1rem;
+  }
+}
+
 .marketing-card {
   display: grid;
   gap: 0.7rem;
