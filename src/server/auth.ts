@@ -91,13 +91,16 @@ async function getAuthSecret(): Promise<string> {
       return secretCache;
     }
     const generated = randomBytes(32).toString("hex");
-    await queryRows(
+    const inserted = await pool.query<{ value: { secret: string } }>(
       `insert into app_settings (key, value) values ('auth_secret', $1::jsonb)
-       on conflict (key) do nothing`,
+       on conflict (key) do update set value = app_settings.value
+       returning value`,
       [JSON.stringify({ secret: generated })],
     );
-    secretCache = generated;
-    return generated;
+    const persisted = inserted.rows[0]?.value?.secret;
+    if (!persisted) throw new Error("Unable to create a persistent session secret.");
+    secretCache = persisted;
+    return persisted;
   }
 
   try {

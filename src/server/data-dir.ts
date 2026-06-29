@@ -15,6 +15,15 @@ import path from "node:path";
  */
 let cached: string | null = null;
 
+export function isEphemeralServerlessRuntime(): boolean {
+  return Boolean(
+    process.env.VERCEL ||
+      process.env.AWS_LAMBDA_FUNCTION_NAME ||
+      process.env.LAMBDA_TASK_ROOT ||
+      process.env.NETLIFY,
+  );
+}
+
 export function getDataDir(): string {
   if (cached) return cached;
 
@@ -23,13 +32,8 @@ export function getDataDir(): string {
     return cached;
   }
 
-  const serverless = Boolean(
-    process.env.VERCEL ||
-      process.env.AWS_LAMBDA_FUNCTION_NAME ||
-      process.env.LAMBDA_TASK_ROOT ||
-      process.env.NETLIFY,
-  );
-
-  cached = serverless ? path.join(os.tmpdir(), "nail-studio-data") : path.join(process.cwd(), ".data");
+  cached = isEphemeralServerlessRuntime()
+    ? path.join(os.tmpdir(), "nail-studio-data")
+    : path.join(process.cwd(), ".data");
   return cached;
 }

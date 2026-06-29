@@ -49,9 +49,12 @@ Anything set in the admin panel overrides the matching environment variable.
 
 ## PostgreSQL
 
-The app works on a local JSON file store when `DATABASE_URL` is unset **or
-unreachable** - a bad URL or wrong password never breaks the site, it just falls
-back to the file store. To use PostgreSQL:
+On a normal Node server, the app can use a local JSON file store when
+`DATABASE_URL` is unset or unreachable. Serverless hosts such as Vercel must use
+PostgreSQL because their filesystem is temporary and is not shared between
+requests. The admin login shows a configuration error instead of creating an
+unreliable temporary account when a Vercel database is missing or unreachable.
+To use PostgreSQL:
 
 1. Create a database and role, e.g.
 
@@ -63,13 +66,16 @@ back to the file store. To use PostgreSQL:
 
 2. Copy `.env.example` to `.env.local` and set `DATABASE_URL` to match the role and
    password above.
-3. Start the app and open Admin -> Settings -> Data storage -> **Create / update
-   tables** (this runs `src/server/schema.sql`). You can also run that SQL manually.
+3. Start the app and open `/admin/login`. On Vercel, the required tables are
+   created automatically before the first admin login. On a normal Node server,
+   you can also use Admin -> Settings -> Data storage -> **Create / update tables**
+   or run `src/server/schema.sql` manually.
 
 **"password authentication failed for user ..."** means `DATABASE_URL` does not match
 your Postgres credentials. Either update the URL to the correct user/password, or
-reset the role's password to match. Until it connects, the app keeps using the file
-store, so the site stays up.
+reset the role's password to match. A normal Node server can fall back to its local
+file store; Vercel blocks admin login and writes until the remote database is
+reachable so changes cannot appear to save and then disappear.
 
 API routes:
 

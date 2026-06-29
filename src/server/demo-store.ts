@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { getDataDir } from "./data-dir";
+import { getDataDir, isEphemeralServerlessRuntime } from "./data-dir";
 import type { AdminNotification, Appointment, Expense, Service } from "@/types";
 import type { AppSettings } from "./settings";
 import type { StoredAccount } from "./auth";
@@ -84,7 +84,7 @@ async function ensureStore() {
   try {
     await readFile(storePath, "utf8");
   } catch {
-    await writeStore(initialStore);
+    await writeFile(storePath, JSON.stringify(initialStore, null, 2), "utf8");
   }
 }
 
@@ -118,6 +118,12 @@ export async function readStore(): Promise<DemoStore> {
 }
 
 export async function writeStore(store: DemoStore) {
+  if (isEphemeralServerlessRuntime()) {
+    throw new Error(
+      "Persistent storage is unavailable on this deployment. Configure DATABASE_URL in Vercel and redeploy.",
+    );
+  }
+
   await mkdir(path.dirname(storePath), { recursive: true });
   await writeFile(storePath, JSON.stringify(store, null, 2), "utf8");
 }

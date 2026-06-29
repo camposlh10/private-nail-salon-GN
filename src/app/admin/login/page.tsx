@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { AuthForm } from "@/components/auth/AuthForm";
 import { ensureAdminSeed, getSession } from "@/server/auth";
 import { getSettings } from "@/server/settings";
+import { prepareDurableStorage } from "@/server/durable-storage";
 
 export const dynamic = "force-dynamic";
 
@@ -10,16 +11,21 @@ export default async function AdminLoginPage({
 }: {
   searchParams: Promise<{ next?: string }>;
 }) {
-  const session = await getSession();
   const { next } = await searchParams;
   const nextPath = next && next.startsWith("/admin") ? next : "/admin";
+  // Bootstrap a newly connected production database before any settings or
+  // session query can touch tables that may not exist yet.
+  const storage = await prepareDurableStorage();
+  const session = storage.ok ? await getSession() : null;
 
   if (session?.role === "admin") {
     redirect(nextPath);
   }
 
   const settings = await getSettings();
-  await ensureAdminSeed(settings.location.ownerEmail);
+  if (storage.ok) {
+    await ensureAdminSeed(settings.location.ownerEmail);
+  }
 
   const usingDefaultPassword = !process.env.ADMIN_PASSWORD;
   const adminEmail = (process.env.ADMIN_EMAIL || settings.location.ownerEmail).toLowerCase();
@@ -31,6 +37,7 @@ export default async function AdminLoginPage({
         nextPath={nextPath}
         title={`${settings.branding.studioName} admin`}
         subtitle="Sign in to manage appointments, services, and your site."
+        configurationError={storage.ok ? undefined : storage.error}
       />
       {usingDefaultPassword ? (
         <p className="auth-hint">

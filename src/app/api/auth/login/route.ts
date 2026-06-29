@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { authenticate, ensureAdminSeed, startSession } from "@/server/auth";
 import { getSettings } from "@/server/settings";
+import { prepareDurableStorage } from "@/server/durable-storage";
 
 export const runtime = "nodejs";
 
@@ -12,6 +13,11 @@ export async function POST(request: NextRequest) {
 
   if (!email || !password) {
     return NextResponse.json({ error: "Email and password are required." }, { status: 400 });
+  }
+
+  const storage = await prepareDurableStorage();
+  if (!storage.ok) {
+    return NextResponse.json({ error: storage.error }, { status: 503 });
   }
 
   // Make sure the admin account exists before an admin attempts to sign in.

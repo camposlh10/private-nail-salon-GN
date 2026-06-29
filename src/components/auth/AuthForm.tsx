@@ -11,11 +11,13 @@ export function AuthForm({
   nextPath,
   title,
   subtitle,
+  configurationError,
 }: {
   mode: Mode;
   nextPath: string;
   title: string;
   subtitle: string;
+  configurationError?: string;
 }) {
   const router = useRouter();
   const [name, setName] = useState("");
@@ -69,6 +71,7 @@ export function AuthForm({
           <p>{subtitle}</p>
         </div>
 
+        {configurationError ? <p className="auth-error">{configurationError}</p> : null}
         {error ? <p className="auth-error">{error}</p> : null}
 
         {isRegister ? (
@@ -106,7 +109,7 @@ export function AuthForm({
           />
         </label>
 
-        <button className="auth-submit" type="submit" disabled={busy}>
+        <button className="auth-submit" type="submit" disabled={busy || Boolean(configurationError)}>
           {busy ? "Please wait…" : isRegister ? "Create account" : "Sign in"}
         </button>
 

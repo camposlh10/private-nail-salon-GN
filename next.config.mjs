@@ -13,6 +13,9 @@ const nextConfig = {
   turbopack: {
     root: projectRoot,
   },
+  outputFileTracingIncludes: {
+    "/*": ["./src/server/schema.sql"],
+  },
 };
 
 export default nextConfig;
