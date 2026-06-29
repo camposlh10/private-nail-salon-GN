@@ -1,0 +1,35 @@
+
+> private-nail-studio-next@0.0.1 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.15.46:3000
+- Environments: .env.local
+✓ Ready in 430ms
+
+ GET / 200 in 494ms (next.js: 175ms, application-code: 320ms)
+ GET /api/pinterest 200 in 71ms (next.js: 57ms, application-code: 14ms)
+ GET /api/instagram 200 in 101ms (next.js: 95ms, application-code: 6ms)
+ GET /api/services 200 in 246ms (next.js: 173ms, application-code: 74ms)
+ GET /api/reviews 200 in 252ms (next.js: 132ms, application-code: 120ms)
+ GET /api/availability?date=2026-06-27&duration=75 200 in 256ms (next.js: 207ms, application-code: 49ms)
+ GET / 200 in 137ms (next.js: 6ms, application-code: 132ms)
+ GET / 200 in 220ms (next.js: 8ms, application-code: 212ms)
+ GET / 200 in 350ms (next.js: 6ms, application-code: 344ms)
+ GET /api/instagram 200 in 16ms (next.js: 6ms, application-code: 10ms)
+ GET /api/pinterest 200 in 13ms (next.js: 7ms, application-code: 7ms)
+ GET /api/reviews 200 in 75ms (next.js: 16ms, application-code: 59ms)
+ GET /api/services 200 in 79ms (next.js: 25ms, application-code: 55ms)
+ GET /api/availability?date=2026-06-27&duration=75 200 in 88ms (next.js: 33ms, application-code: 56ms)
+ POST /api/auth/login 200 in 105ms (next.js: 34ms, application-code: 71ms)
+ POST /api/services 201 in 14ms (next.js: 2ms, application-code: 12ms)
+ PATCH /api/services/qa-dev-restart-service-1782494767976 200 in 625ms (next.js: 612ms, application-code: 14ms)
+ DELETE /api/services/qa-dev-restart-service-1782494767976 200 in 24ms (next.js: 7ms, application-code: 17ms)
+ GET /api/services 200 in 40ms (next.js: 3ms, application-code: 37ms)
+ GET / 200 in 109ms (next.js: 4ms, application-code: 104ms)
+ GET /api/instagram 200 in 11ms (next.js: 6ms, application-code: 5ms)
+ GET /api/pinterest 200 in 54ms (next.js: 50ms, application-code: 4ms)
+ GET /api/reviews 200 in 111ms (next.js: 66ms, application-code: 45ms)
+ GET /api/services 200 in 119ms (next.js: 72ms, application-code: 47ms)
+ GET /api/availability?date=2026-06-27&duration=75 200 in 122ms (next.js: 76ms, application-code: 46ms)

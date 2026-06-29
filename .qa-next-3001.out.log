@@ -1,0 +1,10 @@
+
+> private-nail-studio-next@0.0.1 dev
+> next dev --port 3001
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3001
+- Network:       http://192.168.15.46:3001
+- Environments: .env.local
+✓ Ready in 552ms
+[?25h

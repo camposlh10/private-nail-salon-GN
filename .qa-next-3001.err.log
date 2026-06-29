@@ -1,0 +1,8 @@
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          22504
+- Dir:          C:\Users\campo\Downloads\private-nail-studio-modern
+- Log:          .next\dev\logs\next-development.log
+
+Run taskkill /PID 22504 /F to stop it.

@@ -1,0 +1,944 @@
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices,
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at module evaluation (src\server\demo-store.ts:63:24)
+    at <unknown> (src\server\settings.ts:3:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:380:30)
+    at <unknown> (src\app\layout.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:644:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__1cwo23s._.js:724:47)
+  61 | };
+  62 |
+> 63 | const storePath = path.join(getDataDir(), "demo-store.json");
+     |                        ^
+  64 |
+  65 | const initialStore: DemoStore = {
+  66 |   services: demoServices, {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => {
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⨯ ReferenceError: getDataDir is not defined
+    at <unknown> (src\server\auth.ts:44:25)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3075:30)
+    at <unknown> (src\app\admin\page.tsx:4:1)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3391:30)
+    at module evaluation (C:\Users\campo\Downloads\private-nail-studio-modern\.next\dev\server\chunks\ssr\[root-of-the-server]__08vdcvt._.js:3448:47)
+  42 | export { SESSION_COOKIE };
+  43 | const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+> 44 | const secretPath = path.join(getDataDir(), "auth-secret");
+     |                         ^
+  45 |
+  46 | function scrypt(password: string, salt: Buffer) {
+  47 |   return new Promise<Buffer>((resolve, reject) => { {
+  page: '/admin'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: ImageIcon is not defined
+    at AdminControls (src\components\AdminControls.tsx:227:14)
+  225 |         <div className="admin-card service-editor-card">
+  226 |           <div className="admin-card-title">
+> 227 |             <ImageIcon size={18} />
+      |              ^
+  228 |             <span>Edit services</span>
+  229 |           </div>
+  230 | {
+  digest: '3037947152'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
