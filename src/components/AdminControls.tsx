@@ -81,6 +81,23 @@ function slotRange(slot: TimeSlot) {
   return `${slot.label} - ${timeLabelFromMinutes(timeToMinutes(slot.time) + 30)}`;
 }
 
+async function responseError(response: Response, fallback: string) {
+  try {
+    const payload = (await response.json()) as { error?: string };
+    return payload.error || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function draftError(draft: ServiceDraft) {
+  if (!draft.name.trim()) return "Enter a service name.";
+  if (!draft.category.trim()) return "Choose a service category.";
+  if (!Number.isFinite(draft.durationMinutes) || draft.durationMinutes <= 0) return "Duration must be greater than 0 minutes.";
+  if (!Number.isFinite(draft.priceCents) || draft.priceCents < 0) return "Price must be 0 or greater.";
+  return null;
+}
+
 export function AdminControls() {
   const [services, setServices] = useState<Service[]>([]);
   const [drafts, setDrafts] = useState<Record<string, ServiceDraft>>({});
@@ -97,6 +114,7 @@ export function AdminControls() {
 
   async function loadServices() {
     const response = await fetch("/api/services");
+    if (!response.ok) throw new Error(await responseError(response, "Could not load services."));
     const payload = (await response.json()) as { services?: Service[] };
     const nextServices = payload.services ?? [];
 
@@ -106,6 +124,7 @@ export function AdminControls() {
 
   async function loadAvailability(date = selectedDate) {
     const response = await fetch(`/api/availability?date=${date}&duration=30`);
+    if (!response.ok) throw new Error(await responseError(response, "Could not load availability."));
     const payload = (await response.json()) as { slots?: TimeSlot[] };
     setSlots(payload.slots ?? []);
   }
@@ -118,45 +137,68 @@ export function AdminControls() {
     loadAvailability(selectedDate).catch(() => setStatus("Could not load availability."));
   }, [selectedDate]);
 
-  async function saveService(id: string) {
+  async function saveService(id: string): Promise<boolean> {
     const draft = drafts[id];
 
-    if (!draft) return;
-
-    const response = await fetch(`/api/services/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(draft),
-    });
-
-    if (!response.ok) {
-      setStatus("Service could not be saved.");
-      return;
+    if (!draft) return false;
+    const invalid = draftError(draft);
+    if (invalid) {
+      setStatus(invalid);
+      return false;
     }
 
-    setStatus("Service saved. Clients will see the update.");
-    await loadServices();
+    try {
+      const response = await fetch(`/api/services/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(draft),
+      });
+
+      if (!response.ok) {
+        setStatus(await responseError(response, "Service could not be saved."));
+        return false;
+      }
+
+      setStatus("Service saved. Clients will see the update.");
+      await loadServices();
+      return true;
+    } catch {
+      setStatus("Network error while saving the service. Please try again.");
+      return false;
+    }
   }
 
-  async function addService() {
-    const response = await fetch("/api/services", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newService),
-    });
-
-    if (!response.ok) {
-      setStatus("New service could not be added.");
-      return;
+  async function addService(): Promise<boolean> {
+    const invalid = draftError(newService);
+    if (invalid) {
+      setStatus(invalid);
+      return false;
     }
 
-    setStatus("New service added.");
-    setNewService(emptyDraft);
-    await loadServices();
+    try {
+      const response = await fetch("/api/services", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newService),
+      });
+
+      if (!response.ok) {
+        setStatus(await responseError(response, "New service could not be added."));
+        return false;
+      }
+
+      setStatus("New service added.");
+      setNewService(emptyDraft);
+      await loadServices();
+      return true;
+    } catch {
+      setStatus("Network error while adding the service. Please try again.");
+      return false;
+    }
   }
 
   async function removeService(service: Service) {
@@ -169,7 +211,7 @@ export function AdminControls() {
     });
 
     if (!response.ok) {
-      setStatus("Service could not be deleted.");
+      setStatus(await responseError(response, "Service could not be deleted."));
       return;
     }
 
@@ -191,7 +233,7 @@ export function AdminControls() {
     });
 
     if (!response.ok) {
-      setStatus("Availability could not be updated.");
+      setStatus(await responseError(response, "Availability could not be updated."));
       return;
     }
 
@@ -212,7 +254,7 @@ export function AdminControls() {
   const renderFields = (draft: ServiceDraft, onChange: (patch: Partial<ServiceDraft>) => void) => (
     <div className="svc-fields">
       <label>Name
-        <input value={draft.name} onChange={(e) => onChange({ name: e.target.value })} placeholder="Gel Fill" />
+        <input required value={draft.name} onChange={(e) => onChange({ name: e.target.value })} placeholder="Gel Fill" />
       </label>
       <label>Category
         <select value={draft.category} onChange={(e) => onChange({ category: e.target.value })}>
@@ -221,15 +263,15 @@ export function AdminControls() {
         </select>
       </label>
       <label>Price ($)
-        <input type="number" min={0} value={dollars(draft.priceCents)} onChange={(e) => onChange({ priceCents: Number(e.target.value) * 100 })} />
+        <input type="number" min={0} step="0.01" value={draft.priceCents / 100} onChange={(e) => onChange({ priceCents: Math.round(Number(e.target.value) * 100) })} />
       </label>
       <label>Duration (min)
         <input type="number" min={15} step={15} value={draft.durationMinutes} onChange={(e) => onChange({ durationMinutes: Number(e.target.value) })} />
       </label>
-      <label className="svc-full">Description
+      <label className="svc-full">Description <small>(optional)</small>
         <textarea value={draft.description} onChange={(e) => onChange({ description: e.target.value })} />
       </label>
-      <label className="svc-full">Image URL
+      <label className="svc-full">Image URL <small>(optional)</small>
         <input value={draft.imageUrl} onChange={(e) => onChange({ imageUrl: e.target.value })} placeholder="https://…" />
       </label>
       <label className="svc-full svc-check">
@@ -264,7 +306,7 @@ export function AdminControls() {
           {editingId === "new" ? (
             <div className="svc-newform">
               {renderFields(newService, (patch) => setNewService((current) => ({ ...current, ...patch })))}
-              <button type="button" className="svc-primary" onClick={async () => { await addService(); setEditingId(null); }}>
+              <button type="button" className="svc-primary" onClick={async () => { if (await addService()) setEditingId(null); }}>
                 <Plus size={16} /> Add service
               </button>
             </div>
@@ -299,7 +341,7 @@ export function AdminControls() {
                   {open ? (
                     <div className="svc-editform">
                       {renderFields(draft, (patch) => updateDraft(service.id, patch))}
-                      <button type="button" className="svc-primary" onClick={() => saveService(service.id)}>
+                      <button type="button" className="svc-primary" onClick={async () => { if (await saveService(service.id)) setEditingId(null); }}>
                         <Save size={16} /> Save changes
                       </button>
                     </div>

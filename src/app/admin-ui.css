@@ -546,6 +546,7 @@
 .svc-editform { padding: 4px 12px 14px; }
 .svc-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
 .svc-fields label { display: flex; flex-direction: column; gap: 5px; font-size: 12px; font-weight: 700; color: var(--ink); }
+.svc-fields label small { color: var(--muted); font-weight: 600; }
 .svc-fields .svc-full { grid-column: 1 / -1; }
 .svc-fields input, .svc-fields select, .svc-fields textarea { border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; font-size: 14px; font-weight: 500; background: var(--panel); color: var(--ink); font-family: inherit; }
 .svc-fields textarea { min-height: 56px; resize: vertical; }

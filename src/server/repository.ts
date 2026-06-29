@@ -1124,7 +1124,7 @@ export async function createService(input: ServiceInput): Promise<Service> {
     return service;
   }
 
-  const rows = await queryRows<ServiceRow>(`
+  const result = await activePool.query<ServiceRow>(`
     insert into services (id, name, description, duration_minutes, price_cents, category, image_url, is_popular, is_addon)
     values ($1, $2, $3, $4, $5, $6, $7, $8, $9)
     on conflict (id) do update
@@ -1151,11 +1151,11 @@ export async function createService(input: ServiceInput): Promise<Service> {
       coalesce(is_addon, false) as addon
   `, [id, input.name, input.description, input.durationMinutes, input.priceCents, input.category, input.imageUrl, input.popular ?? false, input.addon ?? false]);
 
-  if (!rows?.[0]) {
+  if (!result.rows[0]) {
     throw new Error("Unable to create service.");
   }
 
-  return rows[0];
+  return result.rows[0];
 }
 
 export async function deleteService(id: string) {
@@ -1174,7 +1174,7 @@ export async function deleteService(id: string) {
     return { id };
   }
 
-  const rows = await queryRows<{ id: string }>(`
+  const result = await activePool.query<{ id: string }>(`
     update services
     set active = false,
         updated_at = now()
@@ -1183,11 +1183,11 @@ export async function deleteService(id: string) {
     returning id
   `, [id]);
 
-  if (!rows?.[0]) {
+  if (!result.rows[0]) {
     throw new Error("Service not found.");
   }
 
-  return rows[0];
+  return result.rows[0];
 }
 
 export async function updateService(id: string, input: ServiceInput): Promise<Service> {
@@ -1208,7 +1208,7 @@ export async function updateService(id: string, input: ServiceInput): Promise<Se
     return service;
   }
 
-  const rows = await queryRows<ServiceRow>(`
+  const result = await activePool.query<ServiceRow>(`
     update services
     set
       name = $2,
@@ -1233,11 +1233,11 @@ export async function updateService(id: string, input: ServiceInput): Promise<Se
       coalesce(is_addon, false) as addon
   `, [id, input.name, input.description, input.durationMinutes, input.priceCents, input.category, input.imageUrl, input.popular ?? false, input.addon ?? false]);
 
-  if (!rows?.[0]) {
+  if (!result.rows[0]) {
     throw new Error("Service not found.");
   }
 
-  return rows[0];
+  return result.rows[0];
 }
 
 export async function setAvailability(date: string, time: string, available: boolean) {
